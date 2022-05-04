@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+        <RadioButton
+            style="@style/s"
+            android:tag="0"
+            android:id="@+id/r0"
+            android:text="锁定横屏" />
+
+        <RadioButton
+            style="@style/s"
+            android:tag="1"
+            android:id="@+id/r1"
+            android:text="锁定竖屏" />
+
+        <RadioButton
+            style="@style/s"
+            android:tag="8"
+            android:id="@+id/r8"
+            android:text="锁定逆向横屏" />
+
+        <RadioButton
+            style="@style/s"
+            android:tag="9"
+            android:id="@+id/r9"
+            android:text="锁定逆向竖屏" />
+
+        <RadioButton
+            style="@style/s"
+            android:tag="10"
+            android:id="@+id/r10"
+            android:text="四向任意旋转" />
+
+        <RadioButton
+            style="@style/s"
+            android:tag="13"
+            android:id="@+id/r13"
+            android:text="系统设置优先" />
+
+        <RadioButton
+            style="@style/s"
+            android:tag="99"
+            android:id="@+id/r99"
+            android:text="关闭方向控制" />
+        </RadioGroup>
+
+        <Button
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="c"
+            android:text="分应用设定方向→"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="16.0sp" />
+
+    </LinearLayout>
+</ScrollView>
